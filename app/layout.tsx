@@ -1,12 +1,11 @@
-// app/layout.tsx
 import "./globals.css";
 import { ReactNode } from "react";
 import { Sidebar } from "../components/Sidebar";
 import { Topbar } from "../components/Topbar";
 
 export const metadata = {
-  title: "Dashboard Pro",
-  description: "Admin dashboard moderne avec Next.js, Tailwind, Shadcn",
+  title: "Dashboard shadcn/ui",
+  description: "Admin dashboard shadcn/ui",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
