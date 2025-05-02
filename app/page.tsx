@@ -5,28 +5,27 @@ import StatCharts from "@/components/StatCharts";
 export default function DashboardPage() {
   return (
     <div className="space-y-10">
-      {/* Stat cards */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <StatCard
-          title="Utilisateurs"
+          title="Users"
           value="1,240"
           icon={<Users className="h-4 w-4 text-muted-foreground" />}
           delay={0}
         />
         <StatCard
-          title="Revenu"
-          value="€8,490"
+          title="Revenue"
+          value="$8,490"
           icon={<DollarSign className="h-4 w-4 text-muted-foreground" />}
           delay={0.1}
         />
         <StatCard
-          title="Commandes"
+          title="Orders"
           value="321"
           icon={<ShoppingCart className="h-4 w-4 text-muted-foreground" />}
           delay={0.2}
         />
         <StatCard
-          title="Activité"
+          title="Activity"
           value="87%"
           icon={<Activity className="h-4 w-4 text-muted-foreground" />}
           delay={0.3}

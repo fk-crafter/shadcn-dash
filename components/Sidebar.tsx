@@ -23,7 +23,7 @@ export const Sidebar = () => {
       transition={{ type: "spring", stiffness: 80 }}
       className="w-64 h-full bg-muted border-r hidden md:block"
     >
-      <div className="p-6 font-bold text-lg">My Dashboard</div>
+      <div className="p-6 font-bold text-lg">Dashboard shadcn/ui</div>
       <nav className="flex flex-col gap-2 px-4">
         {navItems.map(({ href, label, icon: Icon }) => (
           <Link

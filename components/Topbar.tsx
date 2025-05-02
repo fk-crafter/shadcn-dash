@@ -17,20 +17,30 @@ export const Topbar = () => {
       <div className="flex items-center gap-4">
         <Input
           type="text"
-          placeholder="Rechercher..."
+          placeholder="Search..."
           className="w-[200px] lg:w-[300px]"
         />
+
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Avatar className="cursor-pointer">
-              <AvatarImage src="https://github.com/vercel.png" alt="avatar" />
-              <AvatarFallback>ME</AvatarFallback>
-            </Avatar>
+            <div className="group relative">
+              <Avatar className="cursor-pointer group-hover:opacity-80 transition">
+                <AvatarImage src="/avatar.png" alt="User avatar" />
+                <AvatarFallback>ME</AvatarFallback>
+              </Avatar>
+            </div>
           </DropdownMenuTrigger>
+
           <DropdownMenuContent align="end">
-            <DropdownMenuItem>Profil</DropdownMenuItem>
-            <DropdownMenuItem>Paramètres</DropdownMenuItem>
-            <DropdownMenuItem>Déconnexion</DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              Profile
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              Settings
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              Logout
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
