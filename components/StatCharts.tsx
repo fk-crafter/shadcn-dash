@@ -16,7 +16,7 @@ import {
   AreaChart,
   Area,
 } from "recharts";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const barData = [
   { name: "Jan", revenue: 4000 },
